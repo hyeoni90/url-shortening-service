@@ -11,3 +11,10 @@ CREATE TABLE `url` (
   created_at datetime DEFAULT CURRENT_TIMESTAMP NULL,
   updated_at datetime DEFAULT CURRENT_TIMESTAMP NULL
 );
+
+-- -------------------------------------------------------------
+-- CREATE SEQUENCE `URL_SEQ`
+-- -------------------------------------------------------------
+CREATE SEQUENCE URL_SEQ
+START WITH  1000000
+INCREMENT BY 1;
