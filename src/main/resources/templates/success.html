@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>URL Shortener</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+<body>
+<h1>Success!</h1>
+<p th:text="'original url: ' + ${response.originalUrl}" />
+<p th:text="'shortening key: ' + ${response.shorteningKey}" />
+<p th:text="'count: ' + ${response.reqCount}" />
+<a th:href="@{/{shorteningKey}(shorteningKey=${response.shorteningKey})}">shortening URL</a>
+</body>
+</html>
