@@ -6,10 +6,20 @@
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 </head>
 <body>
-<h1>Success!</h1>
-<p th:text="'original url: ' + ${response.originalUrl}" />
-<p th:text="'shortening key: ' + ${response.shorteningKey}" />
-<p th:text="'count: ' + ${response.reqCount}" />
-<a th:href="@{/{shorteningKey}(shorteningKey=${response.shorteningKey})}">shortening URL</a>
+    <h1>Success!</h1>
+    <div>
+        <p th:text="'original url: ' + ${response.originalUrl}" />
+        <p th:text="'shortening key: ' + ${response.shorteningKey}" />
+        <p th:text="'count: ' + ${response.reqCount}" />
+        <a th:href="@{/{shorteningKey}(shorteningKey=${response.shorteningKey})}">shortening URL</a>
+    </div>
+    <div>
+        <button onclick="goBack()">go back</button>
+    </div>
 </body>
 </html>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
