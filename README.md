@@ -16,7 +16,7 @@ URL을 입력받아 짧은 url을 생성, Shortening된 URL을 입력하면 원�
 * Spring Data JPA
 * H2 DataBase
 
-## Install and Usage
+## Getting Started
 1. 빌드 및 실행
 ```shell
 ./gradlew clean && build
