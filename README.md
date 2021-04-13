@@ -1,6 +1,8 @@
 # url-shortening-service
 URL을 입력받아 짧은 url을 생성, Shortening된 URL을 입력하면 원래 URL로 리다이렉트하는 URL Shortening Service
-예) https://en.wikipedia.org/wiki/URL_shortening ->  http://localhost/JZfOQNro
+```
+예) https://en.wikipedia.org/wiki/URL_shortening -> http://localhost/JZfOQNro
+```
 
 ## Requirements
 * URL 입력폼 제공 및 결과 출력 합니다.
@@ -21,7 +23,6 @@ URL을 입력받아 짧은 url을 생성, Shortening된 URL을 입력하면 원�
 ```shell
 ./gradlew clean && build
 ./gradlew bootJar
-
 java -jar build/libs/url-shortening-service-0.0.1-SNAPSHOT.jar
 ```
 2. http://localhost:8080 으로 접속
